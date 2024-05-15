@@ -5,9 +5,28 @@
 
     <ros2_control name="RobotSystem" type="system">
         <xacro:property name="PI" value="3.14159265359" />
-        <hardware>
-            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
-        </hardware>
+
+        <xacro:if value="$(arg is_sim)">
+            <hardware>
+                <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+                <joint name="joint_5">
+                    <param name="mimic">joint_4</param>
+                    <param name="multiplier">-1</param>
+                    <command_interface name="position">
+                        <param name="min">0.0</param>
+                        <param name="max">${PI / 2}</param>
+                    </command_interface>
+                </joint>
+            </hardware>
+        </xacro:if>
+
+        <xacro:unless value="$(arg is_sim)">
+            <hardware>
+                <plugin>stmbot_controllers/StmbotInterface</plugin>
+                <param name="port">/dev/ttyUSB0</param>
+            </hardware>
+        </xacro:unless>
+      
 
         <joint name="joint_1">
             <command_interface name="position">
@@ -41,13 +60,5 @@
             <state_interface name="position" />
         </joint>
 
-        <joint name="joint_5">
-            <param name="mimic">joint_4</param>
-            <param name="multiplier">-1</param>
-            <command_interface name="position">
-                <param name="min">0.0</param>
-                <param name="max">${PI / 2}</param>
-            </command_interface>
-        </joint>
     </ros2_control>
 </robot>

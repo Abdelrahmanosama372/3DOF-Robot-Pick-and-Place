@@ -1,0 +1,9 @@
+<library path="stmbot_controllers">
+  <class name="stmbot_controllers/StmbotInterface"
+      type="stmbot_controllers::StmbotInterface"
+      base_class_type="hardware_interface::SystemInterface">
+    <description>
+      stmbot hardware interface
+    </description>
+  </class>
+</library>
