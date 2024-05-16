@@ -1,0 +1,8 @@
+../stm32f103x6_drivers/stm32f103x6_USART_driver.c:23:6:MCAL_USART_Init	32	static
+../stm32f103x6_drivers/stm32f103x6_USART_driver.c:98:6:MCAL_USART_Deinit	16	static
+../stm32f103x6_drivers/stm32f103x6_USART_driver.c:127:6:MCAL_USART_TX	32	static
+../stm32f103x6_drivers/stm32f103x6_USART_driver.c:146:6:MCAL_USART_RX	32	static
+../stm32f103x6_drivers/stm32f103x6_USART_driver.c:228:6:MCAL_USART_GPIO_Set_Pins	24	static
+../stm32f103x6_drivers/stm32f103x6_USART_driver.c:461:6:USART1_IRQHandler	8	static
+../stm32f103x6_drivers/stm32f103x6_USART_driver.c:466:6:USART2_IRQHandler	8	static
+../stm32f103x6_drivers/stm32f103x6_USART_driver.c:471:6:USART3_IRQHandler	8	static

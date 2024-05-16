@@ -1,0 +1,4 @@
+../stm32f103x6_drivers/stm32f103x6_RCC_driver.c:32:10:MCAL_RCC_get_SYSCLK	2
+../stm32f103x6_drivers/stm32f103x6_RCC_driver.c:41:10:MCAL_RCC_get_HCLK	1
+../stm32f103x6_drivers/stm32f103x6_RCC_driver.c:53:10:MCAL_RCC_get_PCLK1	1
+../stm32f103x6_drivers/stm32f103x6_RCC_driver.c:64:10:MCAL_RCC_get_PCLK2	1

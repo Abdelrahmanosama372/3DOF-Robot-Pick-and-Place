@@ -1,0 +1,4 @@
+../Src/robotManager.c:16:6:robotManager_init	64	static
+../Src/robotManager.c:50:6:robotManager_run	24	static
+../Src/robotManager.c:66:6:parse_command	24	static
+../Src/robotManager.c:81:6:RM_USARTCallBack	16	static

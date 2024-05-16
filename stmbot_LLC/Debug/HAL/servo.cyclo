@@ -1,0 +1,3 @@
+../HAL/servo.c:12:6:HAL_Servo_Init	1
+../HAL/servo.c:24:6:HAL_Servo_Write	1
+../HAL/servo.c:29:9:HAL_Servo_Read	1
